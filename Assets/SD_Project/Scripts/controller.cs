@@ -74,7 +74,7 @@ public class controller : MonoBehaviour
 		}
 
 		if (Input.GetButtonDown("Jump")) {	
-			if (currentBaseState.nameHash == locoState){
+			if (currentBaseState.fullPathHash == locoState){
 				if(!anim.IsInTransition(0))
 				{
 					rb.AddForce(Vector3.up * jumpPower, ForceMode.VelocityChange);
@@ -86,12 +86,12 @@ public class controller : MonoBehaviour
 		
 		transform.localPosition += velocity * Time.fixedDeltaTime;
 		transform.Rotate(0, h * rotateSpeed, 0);	
-		if (currentBaseState.nameHash == locoState){
+		if (currentBaseState.fullPathHash == locoState){
 			if(useCurves){
 				resetCollider();
 			}
 		}
-		if(currentBaseState.nameHash == jumpState)
+		if(currentBaseState.fullPathHash == jumpState)
 		{
 			cameraObject.SendMessage("setCameraPositionJumpView");	
 			if(!anim.IsInTransition(0))
@@ -124,7 +124,7 @@ public class controller : MonoBehaviour
 		}
 
 		
-		else if (currentBaseState.nameHash == idle_cState)
+		else if (currentBaseState.fullPathHash == idle_cState)
 		{
 			if(useCurves){
 				resetCollider();
@@ -137,7 +137,7 @@ public class controller : MonoBehaviour
 			
 			
 		}
-		else if (currentBaseState.nameHash == idle_aState)
+		else if (currentBaseState.fullPathHash == idle_aState)
 		{
 			if(useCurves){
 				resetCollider();
@@ -147,7 +147,7 @@ public class controller : MonoBehaviour
 				anim.SetBool("Cute1", true);
 			}
 		}
-		else if (currentBaseState.nameHash == cute1State)
+		else if (currentBaseState.fullPathHash == cute1State)
 		{
 			
 			if(!anim.IsInTransition(0))

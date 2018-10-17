@@ -352,7 +352,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.25
-  m_Height: 0.92
+  m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.48, z: 0.03}
 --- !u!54 &445344868
@@ -396,7 +396,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 445344865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.0035005, y: 0.299, z: 0.21992254}
+  m_LocalPosition: {x: 4.0035005, y: 0.66, z: 0.21992254}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1301521940}
@@ -449,20 +449,20 @@ MonoBehaviour:
   debugGrounding: 0
   debugPushbackMesssages: 0
   spheres:
-  - offset: 0.23
+  - offset: 0.12
     isFeet: 1
     isHead: 0
-  - offset: 0.36
+  - offset: 0.39
     isFeet: 0
     isHead: 0
-  - offset: 0.51
+  - offset: 0.58
     isFeet: 0
     isHead: 1
   Walkable:
     serializedVersion: 2
     m_Bits: 1
   ownCollider: {fileID: 445344867}
-  radius: 0.23
+  radius: 0.15
 --- !u!114 &445344873
 MonoBehaviour:
   m_ObjectHideFlags: 0
