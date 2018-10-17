@@ -143,7 +143,7 @@ namespace Net.FabreJean.PlayMaker.Ecosystem
 
 		public static EcosystemBrowser Instance;
 
-		[MenuItem ("PlayMaker/Addons/Ecosystem/Ecosystem Browser &e",false,1000)]
+		[MenuItem ("PlayMaker/Addons/Ecosystem/Ecosystem Browser",false,1000)]
 		static void Init () {
 		
 			//Debug.Log("################ Init");
