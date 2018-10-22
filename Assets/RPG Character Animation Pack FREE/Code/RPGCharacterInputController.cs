@@ -34,8 +34,10 @@ namespace RPGCharacterAnims{
 			inputTargetBlock = 0;//Input.GetAxisRaw("TargetBlock");
 			inputAimVertical = 0;//Input.GetAxisRaw("AimVertical");
 			inputAimHorizontal = 0;//Input.GetAxisRaw("AimHorizontal");
-			inputHorizontal = Input.GetAxisRaw("Horizontal");
-			inputVertical = Input.GetAxisRaw("Vertical");
+
+			//inputHorizontal = Input.GetAxisRaw("Horizontal");
+			//inputVertical = Input.GetAxisRaw("Vertical");
+
 			inputAiming = false;//Input.GetButton("Aiming");
 			inputRoll = false;//Input.GetButtonDown("L3");
 		}
